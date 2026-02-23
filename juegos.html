@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NetroPlus - Juegos</title>
+
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'League Spartan',sans-serif;
+}
+
+body{
+background:#000;
+color:#fff;
+overflow-x:hidden;
+}
+
+a{
+text-decoration:none;
+color:#fff;
+}
+
+#pcBlock{
+position:fixed;
+inset:0;
+background:#000;
+display:none;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+z-index:9999;
+font-size:20px;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+background:#000;
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.logo{
+color:#FFD700;
+font-weight:700;
+font-size:22px;
+}
+
+.search{
+padding:10px 15px;
+}
+
+.search input{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background:#111;
+color:white;
+}
+
+.category{
+margin-top:30px;
+}
+
+.category h2{
+padding:0 15px;
+margin-bottom:10px;
+font-size:18px;
+}
+
+.carousel{
+display:flex;
+gap:14px;
+overflow-x:auto;
+padding:10px 15px;
+scrollbar-width:none;
+}
+
+.carousel::-webkit-scrollbar{
+display:none;
+}
+
+.app{
+min-width:110px;
+text-align:center;
+}
+
+.app img{
+width:110px;
+height:110px;
+object-fit:cover;
+border-radius:20px;
+}
+
+.app-name{
+margin-top:6px;
+font-size:14px;
+}
+
+/* horizontales */
+.horizontal .app{
+min-width:240px;
+text-align:left;
+}
+
+.horizontal .app img{
+width:240px;
+height:135px;
+object-fit:cover;
+border-radius:16px;
+}
+
+.horizontal .app-name{
+margin-top:8px;
+font-size:15px;
+}
+
+@media(min-width:900px){
+body > *:not(#pcBlock){
+display:none;
+}
+#pcBlock{
+display:flex;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div id="pcBlock">
+Esta pagina no tiene mantenimiento para Computadoras,<br>
+estamos trabajando en ello.<br><br>
+Ingresa desde tu movil IOS y Android.
+</div>
+
+<header>
+<div class="logo">NetroPlus - Juegos</div>
+<a href="home.html">Peliculas</a>
+</header>
+
+<div class="search">
+<input type="text" placeholder="Buscar juegos y apps...">
+</div>
+
+<!-- JUEGOS -->
+<div class="category">
+<h2>Juegos</h2>
+<div class="carousel">
+
+<a href="minecraft.html" class="app">
+<img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/d9/Bedrock_Edition_App_Store_icon_2.png/revision/latest/scale-to-width-down/250?cb=20230919155825">
+<div class="app-name">Minecraft</div>
+</a>
+
+<a href="subsurface.html" class="app">
+<img src="https://img.itch.zone/aW1nLzI1MjEzOTMzLnBuZw==/315x250%23c/lRQvct.png">
+<div class="app-name">SubSurface</div>
+</a>
+
+<a href="roblox.html" class="app">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KvNyFWMg_bjo_q_1IVLKFWbfCeonn2qDow&s">
+<div class="app-name">Roblox</div>
+</a>
+
+<a href="gtasa.html" class="app">
+<img src="https://img.icons8.com/ios_filled/1200/san-andreas.jpg">
+<div class="app-name">GTA: San Andreas</div>
+</a>
+
+<a href="drivecsx.html" class="app">
+<img src="https://img.utdstc.com/icon/2b2/e05/2b2e05ac40b78be60cf49ea65179ffc66172aad904e7deac8b1122f329ccb0c5:200">
+<div class="app-name">DriveCSX</div>
+</a>
+
+<a href="GachaLife.html" class="app">
+<img src="https://play-lh.googleusercontent.com/Yma8Znj3IENI76qh6VC2cFgzoUwFdt4c2xXMYfK2VUaRZArjqsicFj4zCpUIZRwbdJ_b">
+<div class="app-name">GachaLife</div>
+</a>
+
+<a href="eldenring.html" class="app">
+<img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg">
+<div class="app-name">Elden Ring</div>
+</a>
+
+</div>
+</div>
+
+<!-- APLICACIONES -->
+<div class="category">
+<h2>Aplicaciones</h2>
+<div class="carousel">
+
+<a href="whatsapp.html" class="app">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+<div class="app-name">WhatsApp</div>
+</a>
+
+<a href="instagram.html" class="app">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
+<div class="app-name">Instagram</div>
+</a>
+
+<a href="tiktok.html" class="app">
+<img src="https://cdn.aptoide.com/imgs/c/e/0/ce0e5d9271547d9522fc28eff4478a22_icon.png">
+<div class="app-name">TikTok</div>
+</a>
+
+<a href="spotify.html" class="app">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg">
+<div class="app-name">Spotify</div>
+</a>
+
+<a href="youtube.html" class="app">
+<img src="https://as1.ftcdn.net/jpg/03/88/05/16/1000_F_388051670_uB2VtAbL6aDFOepKK43eEuMgBKPL96Uu.jpg">
+<div class="app-name">YouTube</div>
+</a>
+
+<a href="discord.html" class="app">
+<img src="https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ">
+<div class="app-name">Discord</div>
+</a>
+
+</div>
+</div>
+
+<!-- PROXIMAMENTE -->
+<div class="category">
+<h2>Proximamente</h2>
+<div class="carousel">
+
+<a href="gtavicecity.html" class="app">
+<img src="https://images.steamusercontent.com/ugc/781875234266462115/F16373AC6CEDC232525D7BA5726379F81792A3DD/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false">
+<div class="app-name">GTA: Vice City</div>
+</a>
+
+<a href="gtaIII.html" class="app">
+<img src="https://img.utdstc.com/icon/1da/d4a/1dad4a18462f4c451e8e3a237d5ea4eaf5d1f6f46e43e5b604c42b6db20a9d57:200">
+<div class="app-name">GTA III</div>
+</a>
+
+<a href="AntlassRoblox.html" class="app">
+<img src="https://cdn2.steamgriddb.com/icon/83584fd991eed3055f7b446843f1200e/32/256x256.png">
+<div class="app-name">Antlass Mobile</div>
+</a>
+
+</div>
+</div>
+
+<!-- MAS VISTOS -->
+<div class="category horizontal">
+<h2>Mas vistos</h2>
+<div class="carousel">
+
+<a href="minecraft.html" class="app">
+<img src="https://www.bisecthosting.com/_ipx/q_100/static/img/blog/cat-minecraft.webp">
+<div class="app-name">Minecraft</div>
+</a>
+
+<a href="DriveCSX.html" class="app">
+<img src="https://cdn.aptoide.com/imgs/a/2/4/a24b5d0289c29a26412f6737ed6ed0d3_screen.png?w=325">
+<div class="app-name">DriveCSX</div>
+</a>
+
+<a href="rdr1.html" class="app">
+<img src="https://images8.alphacoders.com/359/thumb-1920-359222.jpg">
+<div class="app-name">Red Dead Redemption 1</div>
+</a>
+
+<a href="eldenring.html" class="app">
+<img src="https://images.alphacoders.com/115/1151246.jpg">
+<div class="app-name">Elden Ring</div>
+</a>
+
+</div>
+</div>
+
+<script>
+document.querySelectorAll('.carousel').forEach(carousel=>{
+carousel.addEventListener('wheel', (e)=>{
+e.preventDefault();
+carousel.scrollLeft += e.deltaY;
+});
+});
+</script>
+
+</body>
+</html>
